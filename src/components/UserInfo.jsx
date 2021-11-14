@@ -6,7 +6,7 @@ const UserInfo = ({ data }) => {
             <CardContent style={{ display: "flex", flexDirection: "column" }}>
                 <aside>
                     <img
-                        src={data.avatar}
+                        src={data?.avatar}
                         style={{ maxWidth: "120px", borderRadius: "50%", margin: "0 20px 20px 0" }}
                         alt=""
                     />
@@ -14,27 +14,27 @@ const UserInfo = ({ data }) => {
                 <main>
                     <Typography type="paragraph">
                         <strong>First name: </strong>
-                        {data.firstName}
+                        {data?.firstName}
                     </Typography>
                     <Typography type="paragraph">
                         <strong>Last name: </strong>
-                        {data.lastName}
+                        {data?.lastName}
                     </Typography>
                     <Typography type="paragraph">
                         <strong>Email: </strong>
-                        {data.email}
+                        {data?.email}
                     </Typography>
                     <Typography type="paragraph">
                         <strong>Phone: </strong>
-                        {data.phone}
+                        {data?.phone}
                     </Typography>
                     <Typography type="paragraph">
                         <strong>Birtday: </strong>
-                        {data.birthday}
+                        {data?.birthday}
                     </Typography>
                     <Typography type="paragraph">
                         <strong>About: </strong>
-                        {data.about}
+                        {data?.about}
                     </Typography>
                 </main>
             </CardContent>

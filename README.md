@@ -1,10 +1,18 @@
-# Notes about the task
+# Task specific stuff
+
+## Preview
+
+Preview of the app is available [here](https://relaxed-bose-7d6ee8.netlify.app/)
+
+## Notes about the task
 
 -   I assumed that we are building a fairly generic form so I should be allowed to use external libraries.
 -   I normally would have written tests at least for the happy path and probably some interesting edge cases, but it seemed like this is out of the scope here.
--   I think the form component is getting a bit big, maybe I would try to extract some of it into smaller components or at least helper functions (formik initialization comes to mind).
+-   I think the form component is getting a bit big, maybe I would try to extract some of it into smaller components or at least helper functions (formik initialization or converting the image to base64 comes to mind).
 -   I am pretty happy with the custom hook (useData) that retrieves and stores data in the session storage, it is quite simple but easily could be used to use http for example.
 -   Ultimately I think styling is a bit of a mess - in some places I used Material in other inline css, partly due to not having a great experience with Material UI library, partly because of trying to keep this app very basic.
+-   If this was a production app I cannot think of a reason not to use Typescript, again to keep it simple here I opted to not use it.
+-   With more time I would love to add some more information to the user (e.g. loading state indication when it comes to async operations) and some fallbacks (e.g. don't show the info when it is empty) here again I opted to keep it relatively simple.
 
 # Getting Started with Create React App
 
