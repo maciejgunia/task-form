@@ -53,7 +53,7 @@ const UserForm = ({ data, setData }) => {
                 .then((file) => {
                     setData({ ...values, avatar: file });
                 })
-                .catch((e) => setData({ ...values, avatar: data.avatar }))
+                .catch((e) => setData({ ...values, avatar: data?.avatar }))
                 .finally(() => {
                     navigate("/info");
                 });
