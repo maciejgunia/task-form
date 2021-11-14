@@ -1,3 +1,11 @@
+# Notes about the task
+
+-   I assumed that we are building a fairly generic form so I should be allowed to use external libraries.
+-   I normally would have written tests at least for the happy path and probably some interesting edge cases, but it seemed like this is out of the scope here.
+-   I think the form component is getting a bit big, maybe I would try to extract some of it into smaller components or at least helper functions (formik initialization comes to mind).
+-   I am pretty happy with the custom hook (useData) that retrieves and stores data in the session storage, it is quite simple but easily could be used to use http for example.
+-   Ultimately I think styling is a bit of a mess - in some places I used Material in other inline css, partly due to not having a great experience with Material UI library, partly because of trying to keep this app very basic.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
